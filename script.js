@@ -179,7 +179,7 @@ function showDetails(docType) {
         document.getElementById('steps').innerHTML = data.steps.map(step => `<li>${step}</li>`).join('');
         document.getElementById('blank-form-link').href = data.blankForm;
         document.getElementById('filled-form-link').href = data.filledForm;
-        document.getElementById('filled-form-preview').src = data.filledForm;
+        document.getElementById('filled-form-preview').setAttribute("src", data.filledForm);
     }
 }
 
