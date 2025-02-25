@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipal E-Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Municipal E-Guide</h1>
+        <p>Essential Documents and Application Procedures</p>
+    </header>
+    
+    <nav class="nav-bar">
+        <button class="back-btn" onclick="goBack()">&#8592;</button>
+    </nav>
+    
+    <div class="container">
+        <div id="main-content" class="grid">
+            <div class="card">
+            <button class="btn" onclick="showDetails('Birth Certificate')">Birth Certificate</button>
+            </div>
+            <div class="card">
+                <button class="btn" onclick="showDetails('Business Permit')">Business Permit</button>
+            </div>
+            <div class="card">
+                <button class="btn" onclick="showDetails('Barangay Clearance')">Barangay Clearance</button>
+            </div>
+            <div class="card">
+                <button class="btn" onclick="showDetails('DTI Business Name Registration')">DTI Business Name Registration</button>
+            </div>
+            <div class="card">
+                <button class="btn" onclick="showDetails('SEC Registration')">SEC Registration</button>
+            </div>
+            <div class="card">
+                <button class="btn" onclick="showDetails('BIR Certificate')">BIR Certificate of Registration (Form 2303)</button>
+            </div>
+            <div class="card">
+                <button class="btn" onclick="showDetails('Sanitary Permit')">Sanitary Permit</button>
+            </div>
+            <div class="card">
+                <button class="btn" onclick="showDetails('Fire Safety Inspection Certificate')">Fire Safety Inspection Certificate</button>
+            </div>
+            <div class="card">
+                <button class="btn" onclick="showDetails('Zoning Clearance')">Zoning Clearance</button>
+            </div>
+            <div class="card">
+                <button class="btn" onclick="showDetails('Occupational Permit')">Occupational Permit / Working Permit</button>
+            </div>
+            <div class="card">
+                <button class="btn" onclick="showDetails('Environmental Compliance Certificate')">Environmental Compliance Certificate (ECC)</button>
+            </div>
+            <div class="card">
+                <button class="btn" onclick="showDetails('Community Tax Certificate')">Community Tax Certificate (Cedula)</button>
+            </div>
+        </div>
+        
+        <div id="details-section" class="details-section">
+            <h2 id="details-title"></h2>
+            <h3>Requirements</h3>
+            <ul id="requirements"></ul>
+            <h3>Fees</h3>
+            <p id="fees"></p>
+            <h3>Step-by-Step Procedure</h3>
+            <ul id="steps"></ul>
+            <a id="blank-form-link" href="#" download class="btn">Download Blank Form</a>
+            <a id="filled-form-link" href="#" download class="btn">Download Example Form</a>
+            <h3>Sample Filled Up Form</h3>
+            <iframe id="filled-form-preview" src="#"></iframe>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        &copy; 2025 Municipal E-Guide. All rights reserved.
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
