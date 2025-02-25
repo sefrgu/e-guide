@@ -82,7 +82,10 @@ iframe {
     margin-top: 30px;
     color: gray;
     font-size: 0.8em;
-} @keyframes fadeIn {
+    padding: 10px;
+    background: #0055a5;  
+}
+@keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(20px);
